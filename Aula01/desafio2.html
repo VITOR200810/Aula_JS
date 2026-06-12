@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- CONFIGURAÇÕES -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de cálculo">
+    <meta name="keywords" content="html, javascript, calculadora">
+    <meta name="author" content="miguel">
+
+    <title>Calculadora Simples</title>
+
+    <!-- ÍCONE -->
+    <link rel="icon"
+        href="https://i.pinimg.com/736x/d4/e0/bd/d4e0bde674fbb4d88ae339a2febe724b.jpg">
+</head>
+
+<body>
+
+    <h1>Calculadora  JavaScript</h1>
+    <hr>
+
+    <p id="resultadoFinal"></p>
+
+    <script>
+
+        alert("BEM-VINDO À CALCULADORA");
+
+        let primeiroValor = prompt("Informe o primeiro valor:");
+        let segundoValor = prompt("Informe o segundo valor:");
+
+        let escolha = prompt("Escolha a operação: + para soma ou - para subtração");
+
+        let conta;
+
+        if (escolha === "+") {
+
+            conta = Number(primeiroValor) + Number(segundoValor);
+
+        } else if (escolha === "-") {
+
+            conta = Number(primeiroValor) - Number(segundoValor);
+
+        } else {
+
+            conta = "Operação inválida!";
+        }
+
+        document.getElementById("resultadoFinal").innerHTML =
+            "Resultado calculado: " + conta;
+
+    </script>
+
+</body>
+
+</html>
